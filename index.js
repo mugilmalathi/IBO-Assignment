@@ -32,7 +32,7 @@ function uniqCount(listOfProducts) {
 
     };
 
-    listOfProducts.forEach((el) => {
+    listOfProducts.map((el) => {
         obj1[el.productName] = (obj1[el.productName] || 0) + 1;
     });
     console.log(obj1);
@@ -44,7 +44,7 @@ function uniqProducts(listOfProducts) {
 
     };
 
-    listOfProducts.forEach((el) => {
+    listOfProducts.map((el) => {
         if (obj2[el.productName] == null) {
             obj2[el.productName] = el;
         } else {
